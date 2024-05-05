@@ -15,7 +15,7 @@
       crossorigin="anonymous"
     />
   <!-- Favicons -->
-  <link href="assets/imgages/logon.png" rel="icon">
+  <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -49,12 +49,49 @@
 
     <!-- jquery cdn link  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+       
+        main {
+          max-width: 900px;
+          margin: 5px auto;
+          padding: 20px;
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+          margin-bottom: 30px;
+        }
+        h2 {
+          color: green;
+          margin-bottom: 15px;
+          margin-bottom: 25px;
+          text-align: center;
+        }
+        p, ul {
+          font-size: 16px;
+          line-height: 1.6;
+          margin-bottom: 10px;
+        }
+        ul {
+          padding-left: 20px;
+        }
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+        @media screen and (max-width: 768px) {
+          main {
+            padding: 10px;
+          }
+        }
+      </style>
   </head>
   <body>
   
 <!-- ======= Header ======= -->
-<header id="header" class="fixed-top px-0">
-  <div class="container d-flex align-items-center justify-content-between px-0">
+<header id="header" class="fixed-top ">
+  <div class="container d-flex align-items-center justify-content-between">
 
      
    <!--  <h1 class="logo"><a href="index.html">prototype 1</a></h1> -->
@@ -68,9 +105,11 @@
         <li><a class="nav-link scrollto" href="carieers.html">Carieers</a></li>
         <li><a class="nav-link scrollto " href="news.html">News</a></li>
         <li><a class="nav-link scrollto" href="wildlife.html">Wildlife</a></li>
-        <li><a href="conservation.html">Conservation</a></li>
+        <!------------------------- <li><a href="conservation.html">Conservation</a></li>------------------------------------------------>
+       
         <li><a class="nav-link scrollto" href="exclusive_officers.html">Exclusive officers</a></li>
         <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
+        <li><a class="nav-link scrollto" href="#" id="loginBtn">Login</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->
@@ -78,13 +117,47 @@
 </header><!-- End Header -->
 
 
+<!-- Popup Modal for Login -->
+<div id="loginModal" class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <!-- Modal Body -->
+      <div class="modal-body">
+        <!-- Login Form -->
+        <form id="loginForm">
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Username or Email" name="username" required>
+          </div>
+          <div class="mb-3">
+            <input type="password" class="form-control" placeholder="Password" name="password" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // JavaScript to handle the popup modal
+  document.getElementById('loginBtn').addEventListener('click', function() {
+    var modal = new bootstrap.Modal(document.getElementById('loginModal'));
+    modal.show();
+  });
+</script>
+
  
 
 
 <!---------------start of home------------------->
-<section class="home pt-5 pb-5 px-0" id="home">
+<section class="home pt-3 pb-5 px-0" id="home">
   <div class="container">
-    <div class="row justify-content-center align-items-center pt-3">
+    <div class="row justify-content-center align-items-center pt-2">
       <!-- Text content column -->
       <div class="col-12 col-md-6 col-sm-12 text-center text-md-start pt-3" data-aos="slide-right">
         <h3 class="p-3 pt-5" style="color: #2e1db1;">
@@ -106,49 +179,55 @@
 </section>
 <!---------------end of home----------->
 
-  
+
+  <!--------------Organizational planning start----------->
 <section class="bg-light py-5" id="organizational-planning">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center mb-5">
         <h2 class="text-primary">Organizational Planning</h2>
-        <p class="text-muted">The Role of Serengeti Smart City in Sustainable Tourism</p>
+        <p class="text-black">The Role of Serengeti Smart City in Sustainable Tourism</p>
         <p>Effective allocation of city resources to maximize productivity and improve citizens' quality of life.</p>
       </div>
     </div>
     <div class="row justify-content-center">
-      <div class="col-lg-4 col-md-6 col-sm-12"> <!-- Added col-sm-12 for small screens -->
+      <div class="col-lg-4 col-md-6 col-sm-12">  
         <div class="card mb-4">
           <div class="card-body text-center">
             <img src="assets/images/vission-icon.png" class="w-25 mb-3" alt="Vision Icon" />
             <h4 class="text-primary">Vision</h4>
-            <p class="text-muted">Our vision is to establish Serengeti as a leading tourist destination in Africa. We envision a future where tourism contributes to the well-being of people and the planet, fostering cultural exchange, environmental conservation, and economic prosperity.</p>
+            <p class="text-black">Our vision is to establish Serengeti as a leading tourist destination in Africa. We envision a future where tourism contributes to the well-being of people and the planet, fostering cultural exchange, environmental conservation, and economic prosperity.</p>
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-12"> <!-- Added col-sm-12 for small screens -->
+      <div class="col-lg-4 col-md-6 col-sm-12">  
         <div class="card mb-4">
           <div class="card-body text-center">
             <img src="assets/images/mission-icon.png" class="w-25 mb-3" alt="Mission Icon" />
             <h4 class="text-primary">Mission</h4>
-            <p class="text-muted">Our mission is to promote sustainable tourism practices that benefit local communities and preserve the environment. We strive to optimize city functions and promote economic growth while also improving the quality of life for citizens by using smart city technologies.</p>
+            <p class="text-black">Our mission is to promote sustainable tourism practices that benefit local communities and preserve the environment. We strive to optimize city functions and promote economic growth while also improving the quality of life for citizens by using smart city technologies.</p>
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-12"> <!-- Added col-sm-12 for small screens -->
+      <div class="col-lg-4 col-md-6 col-sm-12">  
         <div class="card mb-4">
           <div class="card-body text-center">
             <img src="assets/images/goal-icon.png" class="w-25 mb-3" alt="Goals Icon" />
             <h4 class="text-primary">Goals</h4>
-            <p class="text-muted">Our goal is to establish a Sustainable Digital Economic Program that supports Tanzania's tourism industry while preserving the natural and cultural heritage of Serengeti.</p>
+            <p class="text-black">Our goal is to establish a Sustainable Digital Economic Program that supports Tanzania's tourism industry while preserving the natural and cultural heritage of Serengeti.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+<!---------------------End Organizational planning -ends-------------------->
 
 
+
+<!-----------------------------blog news start--------------------------------->
+
+ 
 <section class="blog-section mt-5 pt-5 pb-3" id="blog">
   <div class="container">
     <div class="heading text-center">
@@ -156,29 +235,29 @@
       <p class="text-success">Stay informed with our recent blog posts</p>
     </div>
     <div class="row justify-content-evenly mt-4">
-      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up"> <!-- Adjusted column widths for responsiveness -->
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up"> 
         <div class="blog-card">
           <img src="assets/images/wild_protect.jpg" class="w-100 img-fluid rounded-3" alt="Wildlife Conservation">
           <div class="blog-content mt-3">
-            <h4>Wildlife Conservation Efforts Recognized Globally</h4>
+            <h4 class="text-success">Wildlife Conservation Efforts Recognized Globally</h4>
             <p>We're proud to announce that our conservation efforts have received international recognition. Learn more about our achievements.</p>
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up"> <!-- Adjusted column widths for responsiveness -->
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up"> 
         <div class="blog-card">
           <img src="assets/images/safari.jpg" class="w-100 img-fluid rounded-3" alt="Safari Adventures">
           <div class="blog-content mt-3">
-            <h4>A Guide to Safari Adventures</h4>
+            <h4 class="text-success">A Guide to Safari Adventures</h4>
             <p>Discover the wonders of the Serengeti National Park and embark on unforgettable safari experiences.</p>
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up"> <!-- Adjusted column widths for responsiveness -->
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up">  
         <div class="blog-card">
           <img src="assets/images/conservation_efforts.jpg" class="w-100 img-fluid rounded-3" alt="Wildlife Conservation Awareness">
           <div class="blog-content mt-3">
-            <h4>Raising Awareness About Wildlife Conservation</h4>
+            <h4 class="text-success">Raising Awareness About Wildlife Conservation</h4>
             <p>Find out how we're educating people about the importance of wildlife conservation and fostering a sense of environmental responsibility.</p>
           </div>
         </div>
@@ -188,13 +267,16 @@
 </section>
 
 
- 
-<section class="testimonial mt-5 pt-5 pb-3" id="testimonial">
+<!------------------------------blog news end--------------------------------------->
+
+
+<!---------------------testmonies--------------------------------->
+<section class="testimonial mt-5 pt-5 pb-3">
   <div class="row justify-content-evenly">
-    <div class="col-md-4 col-sm-8 col-10" data-aos="slide-right">
+    <div class="col-md-4 col-sm-8 col-10">
       <img src="assets/images/tastimonials-img.png" class="img-fluid" alt="" />
     </div>
-    <div class="col-md-6 col-sm-8 col-10 mt-5" data-aos="slide-left">
+    <div class="col-md-6 col-sm-8 col-10 mt-5">
       <div class="heading">
         <small>Latest</small>
         <h3> Clients Feedback</h3>
@@ -207,11 +289,11 @@
                   <i class="bi bi-quote"></i>
                 </div>
                 <div class="col-10">
-                  <p class="text-muted">
+                  <p class="text-black">
                     "Insightful event on technology in sustainable tourism. Well-organized and informative. Looking forward to future events."
                   </p>
                   <h4>Magessa</h4>
-                  <small class="fs-6 text-muted">Visitor</small>
+                  <small class="fs-6 text-black">Visitor</small>
                 </div>
               </div>
             </div>
@@ -232,97 +314,78 @@
 </section>
 
 
+<!-----------------------------end testmonies------------------------>
 
-<!--------------start contact section--------------->
 
-<section class="contact py-5" id="contact">
-  <div class="container">
-    <div class="heading text-center">
+
+  <!--------------start contact section--------------->
+ 
+  <section class="contact py-4" id="contact">
+    <div class="heading text-center pt-3">
       <small>Get in Touch</small>
-      <h3>Any Questions? Feel Free to Contact us</h3>
+      <h3>Any Questions? Feel Free to Contact</h3>
     </div>
-    <div class="row mt-5">
-      <!-- Contact Details Column -->
-      <div class="col-12 col-md-6 contact-details mb-4 mb-md-0" data-aos="slide-right">
-        <div class="row mb-3">
-          <div class="col-2">
+    <div class="row justify-content-evenly mt-5">
+      <div class="col-md-5 col-10 contact-details" >
+        <div class="row justify-content-evenly">
+          <div class="col-1">
             <i class="bi bi-geo-alt-fill"></i>
           </div>
-          <div class="col-10">
-            <p>Tanzania</p>
+          <div class="col-11">
+            <p>Serengeti District-Tanzania</p>
           </div>
         </div>
-        <div class="row mb-3">
-          <div class="col-2">
+        <div class="row justify-content-evenly">
+          <div class="col-1">
             <i class="bi bi-telephone-fill"></i>
           </div>
-          <div class="col-10">
-            <p>+255 123456789</p>
+          <div class="col-11">
+            <p>+255 22 123456789</p>
           </div>
         </div>
-        <div class="row mb-3">
-          <div class="col-2">
-            <i class="bi bi-send-fill"></i>
+        <div class="row justify-content-evenly">
+          <div class="col-1">
+            <i class="bi bi-envelope-fill"></i>
           </div>
-          <div class="col-10">
-            <p>info@serengetismartcity.co.tz</p>
+          <div class="col-11">
+            <p>serengetismartcity.go.tz</p>
           </div>
         </div>
-        <div class="row mb-3">
-          <div class="col-2">
+        <div class="row justify-content-evenly">
+          <div class="col-1">
             <i class="bi bi-globe-americas"></i>
           </div>
-          <div class="col-10">
+          <div class="col-11">
             <p>www.serengetismartcity.co.tz</p>
           </div>
         </div>
       </div>
-      <!-- Contact Form Column -->
-      <div class="col-12 col-md-6" data-aos="slide-left">
+      <div class="col-md-5 col-10 mt-3 mt-md-0">
         <div class="contact-form">
-          <div class="mb-3">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Name"
-            />
-          </div>
-          <div class="mb-3">
-            <input
-              type="email"
-              class="form-control"
-              placeholder="E-mail"
-            />
-          </div>
-          <div class="mb-3">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Mobile No."
-            />
-          </div>
-          <div class="mb-3">
-            <textarea
-              class="form-control"
-              placeholder="Message"
-              rows="5"
-            ></textarea>
-          </div>
-          <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-            Submit
-          </button>
+          <form action="https://formsubmit.co/v3668010@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <div class="mb-3">
+              <input type="text" class="form-control" name="name" placeholder="Name" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" name="email" placeholder="E-mail" required>
+            </div>
+            <div class="mb-3">
+              <input type="tel" class="form-control" name="phone" placeholder="Phone No." required>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" name="message" placeholder="Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">Submit</button>
+          </form>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<!-----------------------end of contact section------------------>
-
-
-
-
-
+  </section>
+  
+  <!-----------------------end of contact section------------------>
+  
+  
 
   <!-- ======= Footer ======= -->
   <footer id="footer" style="animation: slideInUp 2s ease-out;">

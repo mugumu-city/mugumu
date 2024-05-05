@@ -65,7 +65,8 @@ body {
   #header {
     transition: all 0.5s;
     z-index: 997;
-    padding: 20px 0;
+    padding-left: 0;
+  
     background-color: #007bff; /* Add blue background color */
     overflow-x: hidden;
   }
@@ -89,6 +90,7 @@ body {
   #header .logo a {
     color: #fff;
   }
+
   
   #header .logo img {
     width: 100%;
