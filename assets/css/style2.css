@@ -262,7 +262,7 @@ body {
     display: none;
     line-height: 0;
     transition: 0.5s;
-    margin-right: 23px;
+    margin-right: 20px;
   }
   
   @media (max-width: 991px) {
