@@ -30,8 +30,6 @@
     <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
  
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
@@ -55,7 +53,7 @@
           max-width: 900px;
           margin: 5px auto;
           padding: 20px;
-          background-color: #fff;
+          background-color: #ffffff;
           border-radius: 8px;
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -63,7 +61,7 @@
           margin-bottom: 30px;
         }
         h2 {
-          color: green;
+          color: #12a89d; 
           margin-bottom: 15px;
           margin-bottom: 25px;
           text-align: center;
@@ -85,6 +83,8 @@
             padding: 10px;
           }
         }
+
+ 
       </style>
   </head>
   <body>
@@ -97,8 +97,7 @@
    <!--  <h1 class="logo"><a href="index.html">prototype 1</a></h1> -->
    <a href="index.html" class="logo"><img src="assets/images/logo.jpeg" alt="" class="img-fluid"></a>
    <div class="text-warning fw-bold fs-5 mx-0 px-0">Serengeti Smart City</div>
-  
-    <nav id="navbar" class="navbar">
+    <nav id="navbar" class="navbar py-3">
       <ul class="align-items-end">
         <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
         <li><a class="nav-link scrollto" href="about.html">About Us</a></li>
@@ -109,49 +108,13 @@
        
         <li><a class="nav-link scrollto" href="exclusive_officers.html">Exclusive officers</a></li>
         <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
-        <li><a class="nav-link scrollto" href="#" id="loginBtn">Login</a></li>
+       
+        <li> <a class="nav-link scrollto" href="https://mail.google.com/mail/" target="_self">Mail us</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->
   </div>
 </header><!-- End Header -->
-
-
-<!-- Popup Modal for Login -->
-<div id="loginModal" class="modal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h5 class="modal-title">Login</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-      <!-- Modal Body -->
-      <div class="modal-body">
-        <!-- Login Form -->
-        <form id="loginForm">
-          <div class="mb-3">
-            <input type="text" class="form-control" placeholder="Username or Email" name="username" required>
-          </div>
-          <div class="mb-3">
-            <input type="password" class="form-control" placeholder="Password" name="password" required>
-          </div>
-          <button type="submit" class="btn btn-primary">Login</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script>
-  // JavaScript to handle the popup modal
-  document.getElementById('loginBtn').addEventListener('click', function() {
-    var modal = new bootstrap.Modal(document.getElementById('loginModal'));
-    modal.show();
-  });
-</script>
-
- 
 
 
 <!---------------start of home------------------->
@@ -160,7 +123,7 @@
     <div class="row justify-content-center align-items-center pt-2">
       <!-- Text content column -->
       <div class="col-12 col-md-6 col-sm-12 text-center text-md-start pt-3" data-aos="slide-right">
-        <h3 class="px-3 pt-5" style="color: #2e1db1;">
+        <h3 class="px-3 pt-5" style="color: #12a89d ">
           Welcome to our tour!
           <br /><span>Experience the Beauty of Serengeti smart city which is located in the northern part of Tanzania, Mara region</span>
         </h3>
@@ -181,11 +144,11 @@
 
 
   <!--------------Organizational planning start----------->
-<section class="bg-light py-5" id="organizational-planning">
+<section class="py-5" id="organizational-planning" style="background-color: #ffffff;">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center mb-5">
-        <h2 class="text-primary">Organizational Planning</h2>
+        <h2 style=" color: #12a89d; ">Organizational Planning</h2>
         <p class="text-black">The Role of Serengeti Smart City in Sustainable Tourism</p>
         <p>Effective allocation of city resources to maximize productivity and improve citizens' quality of life.</p>
       </div>
@@ -195,7 +158,7 @@
         <div class="card mb-4">
           <div class="card-body text-center">
             <img src="assets/images/vission-icon.png" class="w-25 mb-3" alt="Vision Icon" />
-            <h4 class="text-primary">Vision</h4>
+            <h4 style=" color: #12a89d; ">Vision</h4>
             <p class="text-black">Our vision is to establish Serengeti as a leading tourist destination in Africa. We envision a future where tourism contributes to the well-being of people and the planet, fostering cultural exchange, environmental conservation, and economic prosperity.</p>
           </div>
         </div>
@@ -204,7 +167,7 @@
         <div class="card mb-4">
           <div class="card-body text-center">
             <img src="assets/images/mission-icon.png" class="w-25 mb-3" alt="Mission Icon" />
-            <h4 class="text-primary">Mission</h4>
+            <h4 style=" color: #12a89d; ">Mission</h4>
             <p class="text-black">Our mission is to promote sustainable tourism practices that benefit local communities and preserve the environment. We strive to optimize city functions and promote economic growth while also improving the quality of life for citizens by using smart city technologies.</p>
           </div>
         </div>
@@ -213,7 +176,7 @@
         <div class="card mb-4">
           <div class="card-body text-center">
             <img src="assets/images/goal-icon.png" class="w-25 mb-3" alt="Goals Icon" />
-            <h4 class="text-primary">Goals</h4>
+            <h4 style=" color: #12a89d; ">Goals</h4>
             <p class="text-black">Our goal is to establish a Sustainable Digital Economic Program that supports Tanzania's tourism industry while preserving the natural and cultural heritage of Serengeti.</p>
           </div>
         </div>
@@ -239,7 +202,7 @@
         <div class="blog-card">
           <img src="assets/images/wild_protect.jpg" class="w-100 img-fluid rounded-3" alt="Wildlife Conservation">
           <div class="blog-content mt-3">
-            <h4 class="text-success">Wildlife Conservation Efforts Recognized Globally</h4>
+            <h4 style=" color: #12a89d ">Wildlife Conservation Efforts Recognized Globally</h4>
             <p>We're proud to announce that our conservation efforts have received international recognition. Learn more about our achievements.</p>
           </div>
         </div>
@@ -248,7 +211,7 @@
         <div class="blog-card">
           <img src="assets/images/safari.jpg" class="w-100 img-fluid rounded-3" alt="Safari Adventures">
           <div class="blog-content mt-3">
-            <h4 class="text-success">A Guide to Safari Adventures</h4>
+            <h4 style=" color: #12a89d ">A Guide to Safari Adventures</h4>
             <p>Discover the wonders of the Serengeti National Park and embark on unforgettable safari experiences.</p>
           </div>
         </div>
@@ -257,7 +220,7 @@
         <div class="blog-card">
           <img src="assets/images/conservation_efforts.jpg" class="w-100 img-fluid rounded-3" alt="Wildlife Conservation Awareness">
           <div class="blog-content mt-3">
-            <h4 class="text-success">Raising Awareness About Wildlife Conservation</h4>
+            <h4 style=" color: #12a89d ">Raising Awareness About Wildlife Conservation</h4>
             <p>Find out how we're educating people about the importance of wildlife conservation and fostering a sense of environmental responsibility.</p>
           </div>
         </div>
@@ -275,9 +238,9 @@
           <img src="assets/images/tastimonials-img.png" class="img-fluid" alt="" />
         </div>
         <div class="col-md-6 col-10 mt-5"  >
-          <div class="heading">
-            <small>Latest</small>
-            <h3> Clients Feedback</h3>
+          <div class="heading px-3">
+            <small >Latest</small>
+            <h4 style="color: #12a89d;"> Clients Feedback</h4>
             <!-- here we will use carousel element from bootstrap -->
             <div
               id="carouselExampleControls"
@@ -291,11 +254,11 @@
                       <i class="bi bi-quote"></i>
                     </div>
                     <div class="col-10">
-                      <p class="text-muted">
+                      <p style=" color: #000000 ">
                           "Insightful event on Serengeti Smart City  in sustainable tourism. Well-organized and informative.
                            Looking forward to future events."
                       </p>
-                      <h4>Charles</h4>
+                      <h4 style="color: #12a89d;">Charles</h4>
                       <small class="fs-6 text-muted">Visitor</small>
                     </div>
                   </div>
@@ -306,11 +269,11 @@
                       <i class="bi bi-quote"></i>
                     </div>
                     <div class="col-10">
-                      <p class="text-muted">
+                      <p style=" color: #000000 ">
                           Impressive professionalism and attention to detail ...
                           Impressed by your management team's expertise. Valuable insights into conservation efforts and technology's role.
                       </p>
-                      <h4>Zuberi Ibahim</h4>
+                      <h4 style="color: #12a89d;">Zuberi Ibahim</h4>
                       <small class="fs-6 text-muted">Engineer</small>
                     </div>
                   </div>
@@ -321,10 +284,10 @@
                       <i class="bi bi-quote"></i>
                     </div>
                     <div class="col-10">
-                      <p class="text-muted">
+                      <p style=" color: #000000 ">
                           "Your team's dedication to sustainable Serengeti Smart City is commendable. Innovative solutions and comprehensive plans."
                       </p>
-                      <h4> Maria </h4>
+                      <h4 style="color: #12a89d;"> Maria </h4>
                       <small class="fs-6 text-muted">Visitor</small>
                     </div>
                   </div>
@@ -360,7 +323,7 @@
   <section class="contact py-4" id="contact">
     <div class="heading text-center pt-3">
       <small>Get in Touch</small>
-      <h3>Any Questions? Feel Free to Contact</h3>
+      <h5 style="color: #12a89d;;">Any Questions? Feel Free to Contact</h5>
     </div>
     <div class="row justify-content-evenly mt-5">
       <div class="col-md-5 col-10 contact-details" >
@@ -413,7 +376,7 @@
             <div class="mb-3">
               <textarea class="form-control" name="message" placeholder="Message" rows="5" required></textarea>
             </div>
-            <button type="submit" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">Submit</button>
+            <button type="submit" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill" style="background-color: #12a89d; color: #000000 ">Submit</button>
           </form>
         </div>
       </div>
@@ -430,7 +393,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-4 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+            <h4 style="color: #fcb040 ;">Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
@@ -440,7 +403,7 @@
           </div>
 
           <div class="col-lg-4 col-md-6 footer-links">
-            <h4>Our Services</h4>
+            <h4 style="color: #fcb040 ;">Our Services</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="news.html">News</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="carieers.html">Carieers</a></li> 
@@ -450,12 +413,13 @@
           </div>
 
           <div class="col-lg-4 col-md-6 footer-links">
-            <h4>Essantials</h4>
+            <h4 style="color: #fcb040 ;">Essantials</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="services.html">Services</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="conservation.html">Conservation</a></li> 
               <li><i class="bx bx-chevron-right"></i> <a href="wildlife.html">Wildlife</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="project.html">Project</a></li>
+             
             </ul>
           </div>
         </div>
@@ -469,7 +433,7 @@
         <div class="copyright">
             &copy; Copyright <strong><span id="year"></span></strong> <span>@Serengeti Smart City</span>. All Rights Reserved
         </div>     
-        <div class="credits text-primary">        
+        <div class="credits" style=" color: #12a89d; ">        
           Powered by <a href="#">Serengeti District Council</a>
         </div>
       </div>

@@ -10,7 +10,7 @@ body{
 
 /* styling home section starts */
 .home{
-    background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 100%);
+    background: #ffffff;
     padding: 30px 0px 10px 0px;
 }
 .home h2{
@@ -43,7 +43,7 @@ body{
 
 /* expertise section starts */
 .heading small{
-    color: #6f34fe;
+    color: #fcb040;
     font-size: 1.5rem;
     font-weight: 600;
 }
@@ -62,7 +62,7 @@ body{
     color: #fca61f;
 }
 .expertise a:hover{
-    color: #6f34fe;
+    color:  #12a89d;
 }
 .expertise .service-card{
     text-align: center;
@@ -116,33 +116,33 @@ body{
 }
 .testimonial .nextprev-btn{
     border: none;
-    background-color: #fff;
+    background-color: #ffffff;
 }
 .prev:hover,.prev-btn:hover{
-    color:#6f34fe;
+    color: #12a89d;
     transform: translateX(-10px);
     transition-duration: 1s;
 }
 .next:hover,.next-btn:hover{
-    color:#6f34fe;
+    color: #12a89d;
     transform: translateX(10px);
     transition-duration: 1s;
 }
 
 /* blog section starts */
 .blog{
-    background-color: #f2f2ff;
+    background-color: #ffffff;
 }
 .blog .blogpost .card{
     border: none;
     border-radius: 5%;
 }
 .nav-bg{
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 .blog .blogpost small{
-    color: #6f34fe;
+    color:  #12a89d;
     font-size: 1.1rem;
 }
 .blog .blogpost h4,.blogpost a{
@@ -160,14 +160,14 @@ body{
     font-size: 1.1rem;
 }
 .blog .blogpost .read-more-btn:hover{
-    color: #6f34fe;
+    color:  #12a89d;
 }
 /* styling modal group  */
 .btn-c{
     margin-left: 94%;
     background-color: transparent;
     border: none;
-    color: #fff;
+    color: #ffffff;
     font-size: 2rem;
     margin-top: -3%;
 }
@@ -179,11 +179,11 @@ body{
 }
 .modal-body .content small{
     font-size: 1rem;
-    color: #6f34fe;
+    color:  #12a89d;
 }
 /* contact section starts */
 .contact{
-    background-color: #f3f3f3;
+    background-color: #ffffff;
 }
 .contact-details i{
     font-size: 1.5rem;

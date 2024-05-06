@@ -8,12 +8,12 @@ body {
   }
   
   a {
-    color: yellow;
+    color: #fcb040 ;
     text-decoration: none;
   }
   
   a:hover {
-    color: green;
+    color: #12a89d;
     text-decoration: none;
   }
   
@@ -36,7 +36,7 @@ body {
     right: 15px;
     bottom: 15px;
     z-index: 996;
-    background: blue;
+    background: #12a89d;
     width: 40px;
     height: 40px;
     border-radius: 50px;
@@ -45,13 +45,13 @@ body {
   
   .back-to-top i {
     font-size: 28px;
-    color: #fff;
+    color: #ffffff;
     line-height: 0;
   }
   
   .back-to-top:hover {
-    background: yellow;
-    color: #fff;
+    background: #fcb040 ;
+    color: #ffffff;
   }
   
   .back-to-top.active {
@@ -67,7 +67,7 @@ body {
     z-index: 997;
     padding-left: 0;
   
-    background-color: #007bff; /* Add blue background color */
+    background-color: #12a89d; /* Add #12a89d background color */
     overflow-x: hidden;
   }
   
@@ -82,13 +82,13 @@ body {
     height: 60px;
     border-radius: 50%;
     overflow: hidden;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
   
     
   }
   
   #header .logo a {
-    color: #fff;
+    color: #ffffff;
   }
 
   
@@ -138,7 +138,7 @@ body {
     align-items: center;
     justify-content: space-between;
     font-family: "Poppins", sans-serif;
-    color: #fff;
+    color: #ffffff;
     font-size: 15px;
     padding: 0 4px;
     white-space: nowrap;
@@ -178,7 +178,7 @@ body {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #fff;
+    color: #ffffff;
   }
   
   .navbar .dropdown ul {
@@ -220,7 +220,7 @@ body {
   .navbar .dropdown ul a:hover,
   .navbar .dropdown ul .active:hover,
   .navbar .dropdown ul li:hover>a {
-    color: green;
+    color: #12a89d;
   }
   
   .navbar .dropdown:hover>ul {
@@ -256,7 +256,7 @@ body {
   * Mobile Navigation 
   */
   .mobile-nav-toggle {
-    color: #fff;
+    color: #ffffff;
     font-size: 28px;
     cursor: pointer;
     display: none;
@@ -301,7 +301,7 @@ body {
     bottom: 15px;
     left: 15px;
     padding: 10px 0;
-    background-color: #fff;
+    background-color: #ffffff;
     overflow-y: auto;
     transition: 0.3s;
   }
@@ -326,7 +326,7 @@ body {
   .navbar-mobile a:hover,
   .navbar-mobile .active,
   .navbar-mobile li:hover>a {
-    color: green;
+    color: #12a89d;
   }
   
   .navbar-mobile .getstarted,
@@ -342,7 +342,7 @@ body {
     z-index: 99;
     opacity: 1;
     visibility: visible;
-    background: #fff;
+    background: #ffffff;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   }
   
@@ -361,7 +361,7 @@ body {
   .navbar-mobile .dropdown ul a:hover,
   .navbar-mobile .dropdown ul .active:hover,
   .navbar-mobile .dropdown ul li:hover>a {
-    color: green;
+    color: #12a89d;
   }
   
   .navbar-mobile .dropdown>.dropdown-active {
@@ -379,7 +379,7 @@ body {
 --------------------------------------------------------------*/
 
 #footer {
-    color: #fff; /* Text color changed to white */
+    color: #ffffff; /* Text color changed to white */
     font-size: 14px;
     background: #000; /* Black background color */
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -387,7 +387,7 @@ body {
 
   #footer .footer-top {
     padding: 60px 0 30px 0;
-    background: #fff;
+    background: #ffffff;
   }
   
   #footer .footer-top .footer-contact {
@@ -430,7 +430,7 @@ body {
   
   #footer .footer-top .footer-links ul i {
     padding-right: 2px;
-    color: blue;
+    color: #12a89d;
     font-size: 18px;
     line-height: 1;
   }
@@ -454,7 +454,7 @@ body {
   
   #footer .footer-top .footer-links ul a:hover {
     text-decoration: none;
-    color: yellowgreen;
+    color: #fcb040 #12a89d;
   }
   
   
@@ -467,8 +467,8 @@ body {
   #footer .social-links a {
     font-size: 18px;
     display: inline-block;
-    background: green;
-    color: white;
+    background: #12a89d;
+    color: #ffffff;
     line-height: 1;
     padding: 8px 0;
     margin-right: 4px;
@@ -480,8 +480,8 @@ body {
   }
   
   #footer .social-links a:hover {
-    background: yellow;
-    color: #fff;
+    background: #fcb040 ;
+    color: #ffffff;
     text-decoration: none;
   }  
 
