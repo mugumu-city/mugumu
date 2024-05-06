@@ -97,7 +97,8 @@
    <!--  <h1 class="logo"><a href="index.html">prototype 1</a></h1> -->
    <a href="index.html" class="logo"><img src="assets/images/logo.jpeg" alt="" class="img-fluid"></a>
    <div class="text-warning fw-bold fs-5 mx-0 px-0">Serengeti Smart City</div>
-    <nav id="navbar" class="navbar py-3">
+  
+    <nav id="navbar" class="navbar">
       <ul class="align-items-end">
         <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
         <li><a class="nav-link scrollto" href="about.html">About Us</a></li>
@@ -108,14 +109,49 @@
        
         <li><a class="nav-link scrollto" href="exclusive_officers.html">Exclusive officers</a></li>
         <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
-       
-        <li> <a class="nav-link scrollto" href="https://mail.google.com/mail/" target="_self">Mail us</a></li>
+        <li><a class="nav-link scrollto" href="#" id="loginBtn">Login</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->
   </div>
 </header><!-- End Header -->
 
+
+<!-- Popup Modal for Login -->
+<div id="loginModal" class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <!-- Modal Body -->
+      <div class="modal-body">
+        <!-- Login Form -->
+        <form id="loginForm">
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Username or Email" name="username" required>
+          </div>
+          <div class="mb-3">
+            <input type="password" class="form-control" placeholder="Password" name="password" required>
+          </div>
+          <button type="submit" class="btn" style="background-color: #12a89d;">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // JavaScript to handle the popup modal
+  document.getElementById('loginBtn').addEventListener('click', function() {
+    var modal = new bootstrap.Modal(document.getElementById('loginModal'));
+    modal.show();
+  });
+</script>
+
+ 
 
 <!---------------start of home------------------->
 <section class="home pt-3 pb-5 px-0" id="home">
@@ -175,7 +211,7 @@
       <div class="col-lg-4 col-md-6 col-sm-12">  
         <div class="card mb-4">
           <div class="card-body text-center">
-            <img src="assets/images/goal-icon.png" class="w-25 mb-3" alt="Goals Icon" />
+            <img src="assets/images/goals-icon.png" class="w-25 mb-3" alt="Goals Icon" />
             <h4 style=" color: #12a89d; ">Goals</h4>
             <p class="text-black">Our goal is to establish a Sustainable Digital Economic Program that supports Tanzania's tourism industry while preserving the natural and cultural heritage of Serengeti.</p>
           </div>
@@ -348,7 +384,7 @@
             <i class="bi bi-envelope-fill"></i>
           </div>
           <div class="col-11">
-            <p>serengetismartcity.go.tz</p>
+            <p>info@serengetismartcity.co.tz</p>
           </div>
         </div>
         <div class="row justify-content-evenly">
